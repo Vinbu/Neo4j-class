@@ -1,0 +1,11 @@
+services:
+  neo4j_image:
+    build:
+      context: .
+      dockerfile: DockerFile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ../src:/neo4j
+    env_file:
+      - neo.env
