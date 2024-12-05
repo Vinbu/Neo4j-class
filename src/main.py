@@ -44,7 +44,7 @@ def update_alice():
         {"name": "Alice"},
         {"age": 31},
     )
-
+@app.command()
 def get_friend_relationships():
     relations = Queries()
     pairs = relations.get_bidirectional_relations("FRIEND")
